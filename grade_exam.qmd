@@ -55,6 +55,12 @@ knitr::kable()
 
 
 
+Question 5:
+
+```{r}
+ggplot(students, aes(group)) +
+  geom_bar()
+```
 
 
 

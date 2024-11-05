@@ -36,8 +36,22 @@ nrow()
 
 The number of students in the dataset is 716.
 
+Question 4:
+
+```{r}
+students <- grade |>
+ group_by(id,group) |>
+ distinct(id, .keep_all = TRUE)
+  
+```
 
 
+```{r}
+students |>
+slice_tail(n = 5) |>
+knitr::kable()
+
+```
 
 
 

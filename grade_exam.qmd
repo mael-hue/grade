@@ -82,6 +82,21 @@ ggplot(students, aes(x = grade, fill = trimester)) +
 ```
 
 
+Question 8:
+
+```{r}
+grade |>
+  group_by(id, group) |>
+  summarise(mean(grade), max(grade), min(grade)) |>
+  slice_tail(n = 5) |>
+knitr::kable()
+```
+
+| Statistic   | Value |
+|-------------|-------|
+| mean(grade) |       |
+| max(grade)  |       |
+| min(grade)  |       |
 
 
 

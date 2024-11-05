@@ -74,7 +74,12 @@ slice_tail(n = 5) |>
 knitr::kable()
 ```
 
+Question 7:
 
+```{r}
+ggplot(students, aes(x = grade, fill = trimester)) +
+  geom_bar()
+```
 
 
 

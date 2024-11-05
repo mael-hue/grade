@@ -26,6 +26,15 @@ nrow(grade)
 ```
 The data set contains 40 836 grades.
 
+Question 3:
+
+```{r}
+grade |>
+distinct(id) |>
+nrow() 
+```
+
+The number of students in the dataset is 716.
 
 
 

@@ -65,7 +65,14 @@ ggplot(students, aes(group)) +
 ```
 
 
+Question 6:
 
+```{r}
+students |>
+  summarise(mean(students)) |>
+slice_tail(n = 5) |>
+knitr::kable()
+```
 
 
 

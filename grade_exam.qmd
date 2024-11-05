@@ -99,6 +99,23 @@ knitr::kable()
 | min(grade)  |       |
 
 
+Question 9:
+
+```{r}
+new_grade <- grade |>
+  group_by(id) |>
+  mutate(n=nrow(grade))
+new_grade
+```
+
+Question 12:
+
+```{r}
+grade2 <- grade |>
+  group_by(course) |>
+  summarise(id, group, mean(grade))
+grade2
+```
 
 
 

@@ -4,3 +4,17 @@ author: "MOHAMED Maël"
 format: html
 ---
 
+Preliminary and question 1:
+
+```{r}
+#| message: false
+here::i_am("grade.Rproj")
+library(here)
+library(ggplot2)
+library(vroom)
+library(dplyr)
+library(tidyr)
+library(readr)
+spotify <- read_delim("grades.csv")
+```
+

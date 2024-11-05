@@ -17,6 +17,7 @@ library(tidyr)
 library(readr)
 grade <- read_delim("grades.csv")
 ```
+
 Question 2:
 
 Since each row have a grade, we can use the following code
@@ -24,6 +25,7 @@ Since each row have a grade, we can use the following code
 ```{r}
 nrow(grade)
 ```
+
 The data set contains 40 836 grades.
 
 Question 3:
@@ -37,6 +39,8 @@ nrow()
 The number of students in the dataset is 716.
 
 Question 4:
+
+
 
 ```{r}
 students <- grade |>
@@ -53,14 +57,13 @@ knitr::kable()
 
 ```
 
-
-
 Question 5:
 
 ```{r}
 ggplot(students, aes(group)) +
   geom_bar()
 ```
+
 
 
 
